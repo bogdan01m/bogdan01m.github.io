@@ -1,0 +1,23 @@
+theme: jekyll-theme-midnight
+title: Bogdan's homepage
+description: Bookmark this to keep an eye on my project updates!
+# Дополнительно:
+author: Bogdan Minko
+email: minkobogdan2001@gmail.com
+github_username: bogdan01m
+
+# SEO улучшения
+lang: en, ru (native)
+
+# Соцсети (опционально)
+social_links:
+  github: https://github.com/bogdan01m
+  linkedin: https://www.linkedin.com/in/bogdan-minko-05a867322/
+  medium: https://medium.com/@minkobogdan2001
+  habr: https://habr.com/ru/users/Bogdan_m01
+
+# Навигация
+header_pages:
+  - about.md
+  - projects.md
+  - contact.md
