@@ -1,2 +1,2 @@
-# bogdan01m.github.io
+# bogdan.github.io
 My personal site
