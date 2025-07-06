@@ -27,6 +27,8 @@ My job and interests includes:
 - **[mcode](https://github.com/bogdan01m/mcode)** - AI-assistant for coding, which lives in your terminal
 - **[ZapCap MCP Server](https://github.com/bogdan01m/zapcap-mcp-server)** - Unofficial MCP server for video captioning with Claude
 
+[View all projects →](projects/)
+
 ### Connect
 - [GitHub](https://github.com/bogdan01m)
 - [LinkedIn](https://www.linkedin.com/in/bogdan-minko-05a867322/)
