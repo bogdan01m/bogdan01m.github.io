@@ -13,6 +13,7 @@ My job and interests includes:
 - LLM context and prompt engineering
 - MCP tool development and integration
 - Automation creation
+- AI safety and security
 
 **Stack:** Python, LangChain, Pydantic AI, Transformers, PyTorch, NumPy, Scikit-learn, Pandas, Polars, Matplotlib, Seaborn, FastAPI, Docker, Linux, n8n
 
