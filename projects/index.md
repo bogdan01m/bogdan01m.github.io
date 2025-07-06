@@ -1,4 +1,11 @@
-## Projects
+---
+layout: default
+title: Projects
+nav_order: 2
+has_children: true
+---
+
+# Projects
 - **[mcode](https://github.com/bogdan01m/mcode)** - AI-assistant for coding, which lives in your terminal
 
 Mcode provides you to use different providers: openai, gemini, ollama, openrouter etc and saving your messages manually in json after stopping the session. Which means, that you can start your chat history with openai, after changing to gemini, if context becomes big

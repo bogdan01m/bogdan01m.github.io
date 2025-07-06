@@ -1,13 +1,14 @@
-theme: jekyll-theme-midnight
+remote_theme: just-the-docs/just-the-docs
 title: Bogdan's homepage
 description: Bookmark this to keep an eye on my project updates!
-# Дополнительно:
+
+# Site settings
 author: Bogdan Minko
 email: minkobogdan2001@gmail.com
 github_username: bogdan01m
 
 # SEO улучшения
-lang: en, ru (native)
+lang: en
 
 # Соцсети (опционально)
 social_links:
@@ -16,8 +17,10 @@ social_links:
   medium: https://medium.com/@minkobogdan2001
   habr: https://habr.com/ru/users/Bogdan_m01
 
-# Навигация
-header_pages:
-  - about.md
-  - projects/index.md
-  - contact.md
+# Just the Docs theme configuration
+color_scheme: dark
+search_enabled: true
+heading_anchors: true
+
+# Navigation structure
+nav_order: 1

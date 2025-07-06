@@ -1,4 +1,12 @@
-- **[mcode](https://github.com/bogdan01m/mcode)** - AI-assistant for coding, which lives in your terminals
+---
+layout: default
+title: mcode
+parent: Projects
+nav_order: 1
+---
+
+# mcode
+**[GitHub Repository](https://github.com/bogdan01m/mcode)** - AI-assistant for coding, which lives in your terminals
 
 🤖 **Terminal agent system with support for various LLM providers**
 
