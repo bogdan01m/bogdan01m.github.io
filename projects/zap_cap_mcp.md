@@ -1,0 +1,1 @@
+- **[ZapCap MCP Server](https://github.com/bogdan01m/zapcap-mcp-server)** - Unofficial MCP server for video captioning with Claude

@@ -19,5 +19,5 @@ social_links:
 # Навигация
 header_pages:
   - about.md
-  - projects.md
+  - projects/index.md
   - contact.md
