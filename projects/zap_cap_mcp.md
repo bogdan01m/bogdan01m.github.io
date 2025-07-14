@@ -9,6 +9,7 @@ nav_order: 2
 
 [![PyPI version](https://badge.fury.io/py/zapcap-mcp-server.svg)](https://pypi.org/project/zapcap-mcp-server/)
 [![MCP Server](https://img.shields.io/badge/MCP-Server-blue?logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMTMuMDkgOC4yNkwyMCA5TDEzLjA5IDE1Ljc0TDEyIDIyTDEwLjkxIDE1Ljc0TDQgOUwxMC45MSA4LjI2TDEyIDJaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K)](https://modelcontextprotocol.io/)
+[![Author](https://img.shields.io/badge/by-Bogdan%20Minko-purple?style=flat)](https://bogdan01m.github.io/)
 
 **NOTE**: This is an unofficial implementation of MCP Server for ZapCap.
 
@@ -46,6 +47,34 @@ Add to your MCP client `mcp.json` configuration (e.g., Claude Desktop, Cursor an
 
 ```bash
 uv tool install zapcap-mcp-server
+```
+
+## Docker Installation
+
+You can also run the MCP server in a Docker container using the pre-built image from Docker Hub:
+
+### Using pre-built image from Docker Hub:
+```json
+{
+  "mcpServers": {
+    "zapcap": {
+      "command": "docker",
+      "args": [
+        "run", 
+        "--rm", 
+        "--init",
+        "-i",
+        "--net=host",
+        "-v", "/home/$USER:/host/home/$USER",
+        "-e", "ZAPCAP_API_KEY=your_api_key_here",
+        "bogdan01m/zapcap-mcp-server:latest"
+      ],
+      "env": {
+        "DOCKER_CLI_HINTS": "false"
+      }
+    }
+  }
+}
 ```
 
 ## Configuration
@@ -125,6 +154,65 @@ Monitor task progress.
 **Parameters:**
 - `video_id`: Video ID
 - `task_id`: Task ID
+
+## Benefits Over Direct API Usage
+
+### Token Management
+Unlike using curl or direct API calls where you need to manually include your API key in every request:
+
+```bash
+# Traditional curl approach - token needed every time
+curl -X POST "https://api.zapcap.ai/upload" \
+  -H "Authorization: Bearer your_token_here" \
+  -F "file=@video.mp4"
+```
+
+With this MCP server, your API key is configured once in the environment and automatically used for all operations:
+
+```json
+{
+  "env": {
+    "ZAPCAP_API_KEY": "your_api_key_here"
+  }
+}
+```
+
+### Natural Language Interface
+Instead of constructing complex API requests with parameters, you can describe what you want:
+
+**Traditional API:** 
+```bash
+curl -X POST "https://api.zapcap.ai/tasks" \
+  -H "Authorization: Bearer token" \
+  -d '{
+    "video_id": "abc123",
+    "template_id": "viral",
+    "font_size": 30,
+    "highlight_color_1": "#00ff00",
+    "enable_broll": true,
+    "broll_percent": 40
+  }'
+```
+
+**MCP Server:**
+```
+"Add green highlighted subtitles with 40% B-roll using viral template"
+```
+
+### Type Safety & Validation
+- **Pydantic Integration**: All parameters are validated automatically with type checking
+
+## Future Plans
+
+### Testing Integration
+We're planning to add basic testing capabilities:
+
+- **API Integration Tests**: Verify that ZapCap API calls work correctly
+- **MCP Tool Tests**: Ensure all MCP tools respond properly to requests
+
+### Planned Features
+- **Named configurations**: Save frequently used parameter combinations ("my_brand", "youtube_style")
+- **Template enhancement**: Override template defaults with consistent brand colors/fonts
 
 ## License
 
