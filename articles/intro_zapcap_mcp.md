@@ -1,16 +1,16 @@
 ---
-title: "3 Days of API Documentation Hell Led Me to Build a ZapCap MCP Server"
+title: "From 30+ API Parameters to Natural Language: ZapCap MCP Server"
 nav_order: 1
 parent: Articles
 ---
 
-# 3 Days of API Documentation Hell Led Me to Build a ZapCap MCP Server
+# From 30+ API Parameters to Natural Language: ZapCap MCP Server
 
 *How building a simple video app led me to create an MCP server that saves everyone the same headache*
 
 ---
 
-Picture this: you're building a simple video processing application. Your users want something straightforward—just upload a video and add some nice captions with highlights, colors, keyword emphasis, and maybe some B-roll footage. It seems so easy to build, right?
+Picture this: you're building a simple video processing application. Your users want something straightforward - just upload a video and add some nice captions with highlights, colors, keyword emphasis, and maybe some B-roll footage to [ZapCap](https://zapcap.ai/) (an AI-powered video editing platform that specializes in automated subtitle generation and video enhancement). It seems so easy to build, right?
 
 It took me several days just to understand the concept behind ZapCap's API documentation: navigating their Postman collection, figuring out which parameters I should use to avoid ugly subtitles, then spending even more time learning how to handle those parameters to create something actually beautiful.
 
@@ -81,6 +81,12 @@ I was already working with MCP servers daily. This protocol is a game changer fo
 
 The solution was obvious: **build a ZapCap MCP server that handles all this complexity behind simple conversation.**
 
+## What is MCP shortly
+For those unfamiliar, the **Model Context Protocol (MCP)** is an open standard that enables AI applications to connect with external data sources and tools. 
+
+Think of it as a universal translator between AI models and various services - whether that's databases, APIs, local files and prompts. Instead of building custom integrations for every tool, MCP provides a standardized way for AI assistants to interact with external systems.
+
+![alt text](assets/mcp_schema.png)
 ## Building the Bridge
 
 Creating the MCP server was everything the original API integration wasn't—straightforward and focused.
@@ -127,7 +133,7 @@ This isn't revolutionary technology. It's just **putting the complexity where it
 
 **Requirements:**
 - uv
-- ZapCap API key
+- ZapCap API key (includes $5 free credits after auth - enough to process ~50 short videos for testing)
 - Docker (optional, if you like containers)
 
 The setup takes under 5 minutes with two installation options:
