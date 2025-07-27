@@ -17,3 +17,7 @@ MCP support is on the way now
 
 ZapCap MCP Server created for creators, which wonna to add subtitles and b-roll, using natural language, insted of using api or web-app directly.
 MCP server should minimize your time usage, it's very customyzable in plan of creating tasks (captions and b-roll) in Zapcap. You can choose templates for captions, emojis, number of words, b-roll precentage and more
+
+- **[AI Avatar Video Generator](projects/ai_avatar_gen.md)** - AI avatar automation and post-processing using n8n
+
+Transforms **text messages or voice recordings** into professional AI avatar videos with automated post-production.
