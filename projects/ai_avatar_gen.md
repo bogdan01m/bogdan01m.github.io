@@ -1,9 +1,14 @@
 ---
-layout: default
+layout: single
 title: AI Avatar Video Generator
-parent: Projects
-nav_order: 3
+author_profile: true
 ---
+<p align="center">
+  <img src="https://img.shields.io/badge/n8n-automation-red">
+  <img src="https://img.shields.io/badge/HeyGen-API-blue">
+  <img src="https://img.shields.io/badge/OpenAI-GPT--4-green">
+  <img src="https://img.shields.io/badge/ZapCap-API-purple">
+</p>
 
 ## **AI Avatar Video Generator**
 

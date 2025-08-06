@@ -1,9 +1,13 @@
 ---
-layout: default
+layout: single
 title: mcode
-parent: Projects
-nav_order: 1
+author_profile: true
 ---
+<p align="center">
+  <a href="https://github.com/bogdan01m/mcode">
+    <img src="https://img.shields.io/github/stars/bogdan01m/mcode?style=social">
+  </a>
+</p>
 
 # mcode
 **[GitHub Repository](https://github.com/bogdan01m/mcode)** - AI-assistant for coding, which lives in your terminals

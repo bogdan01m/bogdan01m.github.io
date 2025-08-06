@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: single
 title: Home
-nav_order: 1
+author_profile: true
 ---
 
 # Bogdan Minko
@@ -11,6 +11,8 @@ Welcome to my developer portfolio!
 
 ### About Me
 I'm a developer specializing in AI/ML and data science solutions. I build AI-based solutions and integrate them into production code.
+
+🗣️ **Languages:** Russian (native) • English • German
 
 My job and interests includes:
 - Data collection and processing
@@ -36,7 +38,8 @@ My job and interests includes:
 
 [View all projects →](projects/)
 
-### Connect
+### Contact
+- [📄 CV (PDF)](cv/CV%20ENG.pdf)
 - [GitHub](https://github.com/bogdan01m)
 - [LinkedIn](https://www.linkedin.com/in/bogdan-minko-05a867322/)
 - [Medium](https://medium.com/@minkobogdan2001)

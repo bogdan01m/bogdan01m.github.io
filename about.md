@@ -1,10 +1,8 @@
 ---
-layout: default
-title: About
-nav_order: 3
+layout: single
+title: About Me
+author_profile: true
 ---
-
-# About Me
 
 I'm a developer specializing in AI/ML and data science solutions. I build AI-based solutions and integrate them into production code.
 

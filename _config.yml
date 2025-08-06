@@ -1,26 +1,63 @@
-remote_theme: just-the-docs/just-the-docs
-title: My homepage
-description: Bookmark this to keep an eye on my project updates!
+# ── Подключаем тему и плагины ─────────────────────────────────────────────────
+remote_theme: "mmistakes/minimal-mistakes@4.27.3"
+plugins:
+  - jekyll-include-cache   # требуется для кэша include_cached
+  - jekyll-feed            # генерирует feed.xml
+  - jekyll-seo-tag         # мета-теги для SEO
+  - jekyll-sitemap         # sitemap.xml
 
-# Site settings
-author: Bogdan Minko
-email: minkobogdan2001@gmail.com
-github_username: bogdan01m
+# ── Основные параметры сайта ───────────────────────────────────────────────────
+title: "Bogdan Minko"
+description: "AI/ML Engineer Portfolio and Blog"
+lang: "en"
 
-# SEO улучшения
-lang: en
+# ── Скин темы ───────────────────────────────────────────────────────────────────
+minimal_mistakes_skin: "neon"
 
-# Соцсети (опционально)
-social_links:
-  github: https://github.com/bogdan01m
-  linkedin: https://www.linkedin.com/in/bogdan-minko-05a867322/
-  medium: https://medium.com/@minkobogdan2001
-  habr: https://habr.com/ru/users/Bogdan_m01
+# ── Настройки по умолчанию ──────────────────────────────────────────────────────
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+    values:
+      layout: single
+      author_profile: true
 
-# Just the Docs theme configuration
-color_scheme: dark
-search_enabled: true
-heading_anchors: true
+# ── Информация об авторе ────────────────────────────────────────────────────────
+author:
+  name: "Bogdan Minko"
+  avatar: "/assets/avatar.jpg"    # опционально
+  bio: "AI/ML Engineer, AI Sec Engineer."
+  links:
+    github:   "https://github.com/bogdan01m"
+    linkedin: "https://linkedin.com/in/bogdan-minko-05a867322"
+    medium:   "https://medium.com/@minkobogdan2001"
+    habr:     "https://habr.com/ru/users/Bogdan_m01"
 
-# Navigation structure
-nav_order: 1
+# ── Навигация ──────────────────────────────────────────────────────────────────
+masthead_title: "Bogdan Minko"
+
+# ── Блог и пагинация ──────────────────────────────────────────────────────────
+paginate: 5
+paginate_path: "/page:num/"
+
+# ── Настройки подсветки синтаксиса ──────────────────────────────────────────
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    default_lang: text
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
+      start_line: 1
+
+# ── Пример настроек (по умолчанию в конфиге темы более 300 строк с комментариями!) ─
+# Вы можете скопировать весь _config.yml из репозитория темы и удалить ненужное.

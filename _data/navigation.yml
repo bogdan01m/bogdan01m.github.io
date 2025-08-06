@@ -1,0 +1,13 @@
+main:
+  - title: "Articles"
+    url: /articles/
+  - title: "Projects" 
+    url: /projects/
+  - title: "CV"
+    url: /cv/CV ENG.pdf
+  - title: "GitHub"
+    url: https://github.com/bogdan01m
+  - title: "About"
+    url: /about/
+  - title: "Contact"
+    url: /contact/

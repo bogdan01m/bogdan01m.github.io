@@ -1,0 +1,118 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+/* Catppuccin Mocha syntax highlighting */
+.highlight {
+  background-color: #1e1e2e;
+  border-radius: 4px;
+  padding: 1em;
+  overflow-x: auto;
+  
+  .c { color: #6c7086 } /* Comment */
+  .err { color: #f38ba8; background-color: #1e1e2e } /* Error */
+  .k { color: #cba6f7 } /* Keyword */
+  .l { color: #fab387 } /* Literal */
+  .n { color: #cdd6f4 } /* Name */
+  .o { color: #89dceb } /* Operator */
+  .p { color: #cdd6f4 } /* Punctuation */
+  .cm { color: #6c7086 } /* Comment.Multiline */
+  .cp { color: #f38ba8 } /* Comment.Preproc */
+  .c1 { color: #6c7086 } /* Comment.Single */
+  .cs { color: #6c7086 } /* Comment.Special */
+  .gd { color: #f38ba8 } /* Generic.Deleted */
+  .ge { font-style: italic } /* Generic.Emph */
+  .gi { color: #a6e3a1 } /* Generic.Inserted */
+  .gs { font-weight: bold } /* Generic.Strong */
+  .gu { color: #6c7086 } /* Generic.Subheading */
+  .kc { color: #fab387 } /* Keyword.Constant */
+  .kd { color: #cba6f7 } /* Keyword.Declaration */
+  .kn { color: #f38ba8 } /* Keyword.Namespace */
+  .kp { color: #cba6f7 } /* Keyword.Pseudo */
+  .kr { color: #cba6f7 } /* Keyword.Reserved */
+  .kt { color: #f9e2af } /* Keyword.Type */
+  .ld { color: #a6e3a1 } /* Literal.Date */
+  .m { color: #fab387 } /* Literal.Number */
+  .s { color: #a6e3a1 } /* Literal.String */
+  .na { color: #74c7ec } /* Name.Attribute */
+  .nb { color: #f38ba8 } /* Name.Builtin */
+  .nc { color: #f9e2af } /* Name.Class */
+  .no { color: #fab387 } /* Name.Constant */
+  .nd { color: #f38ba8 } /* Name.Decorator */
+  .ni { color: #cdd6f4 } /* Name.Entity */
+  .ne { color: #f38ba8 } /* Name.Exception */
+  .nf { color: #74c7ec } /* Name.Function */
+  .nl { color: #cdd6f4 } /* Name.Label */
+  .nn { color: #f9e2af } /* Name.Namespace */
+  .nx { color: #74c7ec } /* Name.Other */
+  .py { color: #cdd6f4 } /* Name.Property */
+  .nt { color: #f38ba8 } /* Name.Tag */
+  .nv { color: #cdd6f4 } /* Name.Variable */
+  .ow { color: #89dceb } /* Operator.Word */
+  .w { color: #cdd6f4 } /* Text.Whitespace */
+  .mf { color: #fab387 } /* Literal.Number.Float */
+  .mh { color: #fab387 } /* Literal.Number.Hex */
+  .mi { color: #fab387 } /* Literal.Number.Integer */
+  .mo { color: #fab387 } /* Literal.Number.Oct */
+  .sb { color: #a6e3a1 } /* Literal.String.Backtick */
+  .sc { color: #a6e3a1 } /* Literal.String.Char */
+  .sd { color: #a6e3a1 } /* Literal.String.Doc */
+  .s2 { color: #a6e3a1 } /* Literal.String.Double */
+  .se { color: #fab387 } /* Literal.String.Escape */
+  .sh { color: #a6e3a1 } /* Literal.String.Heredoc */
+  .si { color: #a6e3a1 } /* Literal.String.Interpol */
+  .sx { color: #a6e3a1 } /* Literal.String.Other */
+  .sr { color: #a6e3a1 } /* Literal.String.Regex */
+  .s1 { color: #a6e3a1 } /* Literal.String.Single */
+  .ss { color: #a6e3a1 } /* Literal.String.Symbol */
+  .bp { color: #cdd6f4 } /* Name.Builtin.Pseudo */
+  .vc { color: #cdd6f4 } /* Name.Variable.Class */
+  .vg { color: #cdd6f4 } /* Name.Variable.Global */
+  .vi { color: #cdd6f4 } /* Name.Variable.Instance */
+  .il { color: #fab387 } /* Literal.Number.Integer.Long */
+  
+  code {
+    background-color: transparent;
+    color: #cdd6f4;
+  }
+}
+
+/* Inline code styling to match Catppuccin Mocha */
+code {
+  background-color: #1e1e2e;
+  color: #cdd6f4;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+pre {
+  background-color: #1e1e2e;
+  color: #cdd6f4;
+  border-radius: 4px;
+  padding: 1em;
+  overflow-x: auto;
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+/* GitHub icon in navigation */
+.masthead__menu-item a[href*="github.com"]::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  background-image: url('/assets/github-mark-white.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: text-bottom;
+}

@@ -1,11 +1,8 @@
 ---
-layout: default
-title: Contact
-nav_order: 4
+layout: single
+title: Contact Me
+author_profile: true
 ---
-
-# Contact Me
-
 I'm always open to discussing AI/ML projects, collaboration opportunities, or just connecting with fellow developers.
 
 ## Get in Touch

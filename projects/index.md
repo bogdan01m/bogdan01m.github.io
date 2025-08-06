@@ -1,11 +1,12 @@
 ---
-layout: default
+layout: single
 title: Projects
-nav_order: 2
-has_children: true
+author_profile: true
 ---
+- **[Security RAG](security_rag.md)** - AI safety guardrail system using RAG for LLM harm detection and classification
 
-# Projects
+Enhanced LLM safety through retrieval-augmented generation. Classifies request harmfulness, detects dangerous responses, and analyzes refusal mechanisms. Achieved 89.9% F1-weighted score in response harm detection with Ollama, Chroma, and Docker support.
+
 - **[mcode](mcode.md)** - AI-assistant for coding, which lives in your terminal
 
 Mcode provides you to use different providers: openai, gemini, ollama, openrouter etc and saving your messages manually in json after stopping the session. Which means, that you can start your chat history with openai, after changing to gemini, if context becomes big
