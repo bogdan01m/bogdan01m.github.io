@@ -1,6 +1,7 @@
 ---
 layout: single
 title: Projects
+permalink: /projects/
 author_profile: true
 ---
 - **[Security RAG](security_rag.md)** - AI safety guardrail system using RAG for LLM harm detection and classification

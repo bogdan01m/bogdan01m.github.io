@@ -1,6 +1,7 @@
 ---
 layout: single
 title: Contact Me
+permalink: /contact/
 author_profile: true
 ---
 I'm always open to discussing AI/ML projects, collaboration opportunities, or just connecting with fellow developers.

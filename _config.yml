@@ -42,6 +42,16 @@ author:
 # ── Навигация ──────────────────────────────────────────────────────────────────
 masthead_title: "Bogdan Minko"
 
+# Главное меню
+navigation:
+  main:
+    - title: "About"
+      url: /about/
+    - title: "Projects" 
+      url: /projects/
+    - title: "Contact"
+      url: /contact/
+
 # ── Блог и пагинация ──────────────────────────────────────────────────────────
 paginate: 5
 paginate_path: "/page:num/"

@@ -1,6 +1,7 @@
 ---
 layout: single
 title: About Me
+permalink: /about/
 author_profile: true
 ---
 
@@ -54,4 +55,5 @@ My job and interests includes:
 
 ## Philosophy
 
-I believe in building robust, production-ready AI solutions that are both powerful and safe. My approach combines cutting-edge AI technology with solid engineering practices to create tools that make a real difference.
+The best code is code that is not needed. 
+The best solution is the simplest solution you can make.
