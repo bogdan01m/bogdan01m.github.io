@@ -28,7 +28,7 @@ My job and interests includes:
 *I use Arch, btw!* 😄
 
 ### Experience
-- **AI Security Lab** - AI/ML Engineer (2024-Present)
+- **Raft** - AI/ML Engineer, AI Sec Engineer @Hivetrace (2024-Present)
 - **Tyumen Industrial University × Rosneft** - Research Data Scientist (2023-2024)
 
 
