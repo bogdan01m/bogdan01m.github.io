@@ -12,7 +12,7 @@ description: "AI/ML Engineer Portfolio and Blog"
 lang: "en"
 
 # ── Скин темы ───────────────────────────────────────────────────────────────────
-minimal_mistakes_skin: "sunrise"
+minimal_mistakes_skin: "dark"
 
 # ── Настройки по умолчанию ──────────────────────────────────────────────────────
 defaults:

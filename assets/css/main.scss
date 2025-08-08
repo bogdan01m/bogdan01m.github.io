@@ -4,8 +4,40 @@
 
 @charset "utf-8";
 
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/* Custom typography improvements */
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+code, pre, kbd, samp {
+  font-family: "JetBrains Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Monaco, Courier, monospace;
+  font-weight: 400;
+}
+
+.page__title {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.author__bio {
+  font-weight: 400;
+  font-size: 0.9em;
+  opacity: 0.9;
+}
 
 /* Catppuccin Mocha syntax highlighting */
 .highlight {
@@ -81,22 +113,19 @@
     color: #cdd6f4;
   }
 }
-
-/* Inline code styling to match Catppuccin Mocha */
-code {
-  background-color: #1e1e2e;
-  color: #cdd6f4;
-  padding: 0.2em 0.4em;
-  border-radius: 3px;
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
 }
 
-pre {
-  background-color: #1e1e2e;
-  color: #cdd6f4;
-  border-radius: 4px;
-  padding: 1em;
-  overflow-x: auto;
+.tech-card {
+  background: var(--background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 pre code {
@@ -115,4 +144,105 @@ pre code {
   background-size: contain;
   background-repeat: no-repeat;
   vertical-align: text-bottom;
+}
+
+
+:root {
+  --catppuccin-base: #1e1e2e;
+  --catppuccin-mantle: #181825;
+  --catppuccin-surface0: #313244;
+  --catppuccin-surface1: #45475a;
+  --catppuccin-text: #cdd6f4;
+  --catppuccin-subtext1: #bac2de;
+  --catppuccin-lavender: #b4befe;
+  --catppuccin-blue: #89b4fa;
+  --catppuccin-sapphire: #74c7ec;
+  --catppuccin-teal: #94e2d5;
+}
+
+/* Light theme variables (air theme) */
+[data-theme="air"] {
+  --catppuccin-base: #fafafa;
+  --catppuccin-mantle: #ffffff;
+  --catppuccin-surface0: #e8e8e8;
+  --catppuccin-surface1: #d3d3d3;
+  --catppuccin-text: #2d2d2d;
+  --catppuccin-subtext1: #4a4a4a;
+  --catppuccin-lavender: #6366f1;
+  --catppuccin-blue: #3b82f6;
+  --catppuccin-sapphire: #06b6d4;
+  --catppuccin-teal: #14b8a6;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+  perspective: 1000px;
+}
+
+.tech-card {
+  background: var(--catppuccin-mantle);
+  border: 1px solid var(--catppuccin-surface0);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transform-style: preserve-3d;
+  will-change: transform;
+  
+  box-shadow: 
+    0 4px 6px rgba(180, 190, 254, 0.08),
+    0 10px 20px rgba(137, 180, 250, 0.12),
+    0 0 0 1px rgba(116, 199, 236, 0.05);
+  
+  transition: 
+    transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+    border-color 0.3s ease-out;
+  
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--catppuccin-text);
+  
+  animation: slideInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.tech-card h6 {
+  margin: 0 0 0.8rem 0 !important;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  
+  background: linear-gradient(135deg, var(--catppuccin-lavender) 0%, var(--catppuccin-blue) 50%, var(--catppuccin-sapphire) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: var(--catppuccin-blue);
+}
+
+.tech-card:hover {
+  transform: translateY(-8px) rotateX(5deg) rotateY(5deg) scale(1.02);
+  border-color: var(--catppuccin-surface1);
+  
+  box-shadow: 
+    0 8px 16px rgba(180, 190, 254, 0.15),
+    0 20px 40px rgba(137, 180, 250, 0.2),
+    0 0 0 1px rgba(116, 199, 236, 0.1),
+    inset 0 1px 0 rgba(205, 214, 244, 0.1);
+}
+
+code {
+  background-color: var(--catppuccin-base);
+  color: var(--catppuccin-text);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+pre {
+  background-color: var(--catppuccin-base);
+  color: var(--catppuccin-text);
+  border-radius: 4px;
+  padding: 1em;
+  overflow-x: auto;
 }
