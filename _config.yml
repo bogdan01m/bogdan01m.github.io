@@ -45,8 +45,6 @@ masthead_title: "Bogdan Minko"
 # Главное меню
 navigation:
   main:
-    - title: "About"
-      url: /about/
     - title: "Projects" 
       url: /projects/
     - title: "Contact"

@@ -3,23 +3,42 @@ layout: single
 title: Projects
 permalink: /projects/
 author_profile: true
+classes: projects-page
 ---
-- **[Security RAG](security_rag.md)** - AI safety guardrail system using RAG for LLM harm detection and classification
 
-    Enhanced LLM safety through retrieval-augmented generation. Classifies request harmfulness, detects dangerous responses, and analyzes refusal mechanisms. Achieved 89.9% F1-weighted score in response harm detection with Ollama, Chroma, and Docker support.
-
-- **[mcode](mcode.md)** - AI-assistant for coding, which lives in your terminal
-
-    Mcode provides you to use different providers: openai, gemini, ollama, openrouter etc and saving your messages manually in json after stopping the session. Which means, that you can start your chat history with openai, after changing to gemini, if context becomes big
-
-    MCP support is on the way now
-
-
-- **[ZapCap MCP Server](zap_cap_mcp.md)** - Unofficial MCP server for video captioning with Claude
-
-    ZapCap MCP Server created for creators, which wonna to add subtitles and b-roll, using natural language, insted of using api or web-app directly.
-    MCP server should minimize your time usage, it's very customyzable in plan of creating tasks (captions and b-roll) in Zapcap. You can choose templates for captions, emojis, number of words, b-roll precentage and more
-
-- **[AI Avatar Video Generator](ai_avatar_gen.md)** - AI avatar automation and post-processing using n8n
-
-    Transforms **text messages or voice recordings** into professional AI avatar videos with automated post-production.
+{% capture projects-grid %}
+<div class="tech-grid">
+  <div class="tech-card">
+    <h6>🛡️ Security RAG</h6>
+    <p>AI safety guardrail system</p>
+    <img src="assets/Security_Rag_demo.gif" alt="Security RAG Demo" style="width: 100%; border-radius: 6px; margin: 0.5rem 0;">
+    <p><small>Enhanced LLM safety through retrieval-augmented generation. Achieved 89.9% F1-weighted score in response harm detection with Ollama, Chroma, and Docker support.</small></p>
+    <p><a href="security_rag" class="btn btn--primary btn--small">View Project</a></p>
+  </div>
+  
+  <div class="tech-card">
+    <h6>💻 mcode</h6>
+    <p>AI-assistant for coding, which lives in your terminal</p>
+    <img src="assets/mcode_demo.gif" alt="mcode Demo" style="width: 100%; border-radius: 6px; margin: 0.5rem 0;">
+    <p><small>Multi-provider AI coding assistant supporting OpenAI, Gemini, Ollama, OpenRouter with persistent chat history and upcoming MCP support.</small></p>
+    <p><a href="mcode" class="btn btn--primary btn--small">View Project</a></p>
+  </div>
+  
+  <div class="tech-card">
+    <h6>🎬 ZapCap MCP Server</h6>
+    <p>Unofficial MCP server for video captioning with Claude</p>
+    <img src="assets/zapcap_demo.gif" alt="ZapCap Demo" style="width: 100%; border-radius: 6px; margin: 0.5rem 0;">
+    <p><small>Streamlines video captioning and b-roll creation using natural language. Customizable templates, emojis, word count, and b-roll percentage settings.</small></p>
+    <p><a href="zap_cap_mcp" class="btn btn--primary btn--small">View Project</a></p>
+  </div>
+  
+  <div class="tech-card">
+    <h6>🤖 AI Avatar Video Generator</h6>
+    <p>AI avatar automation and post-processing using n8n</p>
+    <img src="assets/avatar_gen_gif.gif" alt="AI Avatar Demo" style="width: 100%; border-radius: 6px; margin: 0.5rem 0;">
+    <p><small>Transforms text messages or voice recordings into professional AI avatar videos with automated post-production workflows.</small></p>
+    <p><a href="ai_avatar_gen" class="btn btn--primary btn--small">View Project</a></p>
+  </div>
+</div>
+{% endcapture %}
+{{ projects-grid }}

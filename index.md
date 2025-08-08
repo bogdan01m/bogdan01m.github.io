@@ -29,7 +29,7 @@ My job and interests include:
   </div>
   <div class="tech-card">
     <h6>💻 Dev Environment</h6>
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/archlinux/archlinux-original.svg" alt="Arch Linux" width="12" height="12" style="vertical-align: middle;"> Arch Linux • VS Code • Git
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/archlinux/archlinux-original.svg" alt="Arch Linux" width="12" height="12" style="vertical-align: middle;"> Arch Linux • VS Code • Git • Claude Code
   </div>
   <div class="tech-card">
     <h6>🛡️ AI Security</h6>
@@ -69,7 +69,7 @@ My job and interests include:
 - [Medium](https://medium.com/@minkobogdan2001)
 - [Habr](https://habr.com/ru/users/Bogdan_m01)
 
-**Languages**: Russian (native) • English (B2) • German (B2/C1)
+**Languages**: Russian (native) • English • German
 
 ---
 **Email**: `minkobogdan2001@gmail.com`
