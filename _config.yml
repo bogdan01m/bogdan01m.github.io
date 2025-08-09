@@ -20,12 +20,12 @@ defaults:
       path: ""
       type: "posts"
     values:
-      layout: single
+      layout: wide
       author_profile: true
   - scope:
       path: ""
     values:
-      layout: single
+      layout: wide
       author_profile: true
 
 # ── Информация об авторе ────────────────────────────────────────────────────────
