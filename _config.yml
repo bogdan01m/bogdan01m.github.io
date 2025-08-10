@@ -8,7 +8,7 @@ plugins:
 
 # ── Основные параметры сайта ───────────────────────────────────────────────────
 title: "Bogdan Minko"
-description: "AI/ML Engineer Portfolio and Blog"
+description: "AI Engineer Portfolio and Blog"
 lang: "en"
 
 # ── Скин темы ───────────────────────────────────────────────────────────────────
@@ -32,7 +32,7 @@ defaults:
 author:
   name: "Bogdan Minko"
   avatar: "/assets/avatar.jpg"    # опционально
-  bio: "AI/ML Engineer, AI Sec Engineer."
+  bio: "AI Engineer, AI Sec Engineer."
   links:
     github:   "https://github.com/bogdan01m"
     linkedin: "https://linkedin.com/in/bogdan-minko-05a867322"
