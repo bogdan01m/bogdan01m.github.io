@@ -4,8 +4,6 @@ title: ZapCap MCP Server
 author_profile: true
 ---
 
-# ZapCap MCP Server
-
 <p align="center">
   <a href="https://pypi.org/project/zapcap-mcp-server/">
     <img src="https://badge.fury.io/py/zapcap-mcp-server.svg">

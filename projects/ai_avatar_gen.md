@@ -9,8 +9,6 @@ author_profile: true
   <img src="https://img.shields.io/badge/ZapCap-API-purple">
 </p>
 
-## **AI Avatar Video Generator**
-
 Advanced automation pipeline that transforms **text messages or voice recordings** into professional video content using AI avatars, voice synthesis, and automated post-processing.
 
 **Tech Stack:** n8n, HeyGen API, OpenAI GPT-4.1, ZapCap API, Telegram Bot API

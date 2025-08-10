@@ -1,11 +1,10 @@
 ---
-title: "From 30+ API Parameters to Natural Language: ZapCap MCP Server"
+layout: single
+title: "From 30+ API Parameters to Natural Language: ZapCap MCP Server"
+author_profile: true
 nav_order: 1
 parent: Articles
 ---
-
-# From 30+ API Parameters to Natural Language: ZapCap MCP Server
-
 *How building a simple video app led me to create an MCP server that saves everyone the same headache*
 
 ---
