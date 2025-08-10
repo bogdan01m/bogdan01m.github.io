@@ -34,7 +34,7 @@ classes: projects-page
   
   <div class="tech-card">
     <h6>🤖 AI Avatar Video Generator</h6>
-    <p>AI avatar automation and post-processing using n8n</p>
+    <p>AI avatar automation and post-processing</p>
     <img src="assets/avatar_gen_gif.gif" alt="AI Avatar Demo" style="width: 100%; border-radius: 6px; margin: 0.5rem 0;">
     <p><medium>Transforms text messages or voice recordings into professional AI avatar videos with automated post-production workflows.</medium></p>
     <p><a href="ai_avatar_gen" class="btn btn--primary btn--medium">View Project</a></p>
